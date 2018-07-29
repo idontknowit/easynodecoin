@@ -155,11 +155,11 @@ public:
         vSeeds.push_back(CDNSSeedData("seed3.easynodecoin.io", "seed3.easynodecoin.io"));
 
         // Easynodecoin addresses start with 'G'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,102);
         // Easynodecoin script addresses start with '5'
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,103);
         // Easynodecoin private keys start with '5' or 'G'
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,198);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,177);
         // Easynodecoin BIP32 pubkeys start with 'xpub' (Bitcoin defaults)
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         // Easynodecoin BIP32 prvkeys start with 'xprv' (Bitcoin defaults)
